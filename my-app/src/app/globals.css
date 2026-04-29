@@ -485,3 +485,32 @@ img {
   pointer-events: none;
   -webkit-user-drag: none;
 }
+
+/* --- Performance Fix for OurWorkSection --- */
+
+/* Force GPU acceleration for the scrolling containers */
+.animate-scroll-auto, 
+.animate-scroll-auto-reverse {
+  display: flex !important;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0); /* Forces GPU layer */
+  will-change: transform;
+}
+
+/* Optimize the animation to only use the transform property */
+@keyframes scroll-auto {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scroll-auto-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* Disable heavy effects on moving images to save CPU */
+.animate-scroll-auto img,
+.animate-scroll-auto-reverse img {
+  image-rendering: -webkit-optimize-contrast;
+  transform: translateZ(0);
+}
