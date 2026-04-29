@@ -1,0 +1,39 @@
+name: Frontend Deploy
+
+on:
+  push:
+    branches:
+      - main
+      - v2
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout code (only for syncing repo in Actions)
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Deploy directly to VPS & build ONLY on server
+      - name: Deploy to VPS - Main
+        if: github.ref == 'refs/heads/main'
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.VPS_IP }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          port: 22
+          script: |
+
+            cd /var/www/Yajur
+
+            git reset --hard HEAD
+            git pull origin main
+
+            cd my-app
+
+            /home/dev/.bun/bin/bun install
+            /home/dev/.bun/bin/bun run build
+
+            /home/dev/.bun/bin/pm2 restart ${{ secrets.PM2_APP_NAME }}

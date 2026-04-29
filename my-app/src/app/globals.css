@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@plugin 'tailwindcss-animate';
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* HAND NGO Light Theme - Professional Humanitarian Colors */
+
+  /* Primary Colors - Deep Blue (Trust, Stability, Professionalism) */
+  --hand-primary-50: 213 100% 97%;
+  --hand-primary-100: 213 100% 93%;
+  --hand-primary-200: 213 100% 87%;
+  --hand-primary-300: 213 100% 78%;
+  --hand-primary-400: 213 100% 68%;
+  --hand-primary-500: 213 100% 60%;
+  --hand-primary-600: 213 100% 53%;
+  --hand-primary-700: 213 100% 48%;
+  --hand-primary-800: 213 100% 40%;
+  --hand-primary-900: 213 100% 33%;
+
+  /* Secondary Colors - Cool Blue (Compassion, Action, Hope) */
+  --hand-secondary-50: 213 100% 97%;
+  --hand-secondary-100: 213 100% 93%;
+  --hand-secondary-200: 213 100% 87%;
+  --hand-secondary-300: 213 100% 78%;
+  --hand-secondary-400: 213 100% 68%;
+  --hand-secondary-500: 213 100% 60%;
+  --hand-secondary-600: 213 100% 53%;
+  --hand-secondary-700: 213 100% 48%;
+  --hand-secondary-800: 213 100% 40%;
+  --hand-secondary-900: 213 100% 33%;
+
+  /* Success Colors - Green (Growth, Impact, Sustainability) */
+  --hand-success-50: 138 76% 97%;
+  --hand-success-100: 138 76% 93%;
+  --hand-success-200: 138 76% 85%;
+  --hand-success-300: 138 76% 73%;
+  --hand-success-400: 138 76% 58%;
+  --hand-success-500: 138 76% 45%;
+  --hand-success-600: 138 76% 36%;
+  --hand-success-700: 138 76% 29%;
+  --hand-success-800: 138 76% 25%;
+  --hand-success-900: 138 76% 21%;
+
+  /* Warning Colors - Red (Emergency, Urgency, Action) */
+  --hand-warning-50: 0 84% 97%;
+  --hand-warning-100: 0 84% 94%;
+  --hand-warning-200: 0 84% 89%;
+  --hand-warning-300: 0 84% 82%;
+  --hand-warning-400: 0 84% 71%;
+  --hand-warning-500: 0 84% 60%;
+  --hand-warning-600: 0 84% 51%;
+  --hand-warning-700: 0 84% 42%;
+  --hand-warning-800: 0 84% 35%;
+  --hand-warning-900: 0 84% 30%;
+
+  /* Neutral Colors - Professional Grays (Cool Text Colors) */
+  --hand-neutral-50: 220 13% 98%;
+  --hand-neutral-100: 220 13% 96%;
+  --hand-neutral-200: 220 13% 91%;
+  --hand-neutral-300: 220 13% 84%;
+  --hand-neutral-400: 220 13% 65%;
+  --hand-neutral-500: 220 13% 46%;
+  --hand-neutral-600: 220 13% 34%;
+  --hand-neutral-700: 220 13% 27%;
+  --hand-neutral-800: 220 13% 17%;
+  --hand-neutral-900: 220 13% 11%;
+
+  /* Custom Text Color */
+  --hand-text-primary: 15 25% 39%;
+
+  /* Legacy Theme Support */
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  /* HAND NGO Dark Theme - Professional Humanitarian Colors */
+
+  /* Primary Colors - Deep Blue (Trust, Stability, Professionalism) */
+  --hand-primary-50: 213 100% 33%;
+  --hand-primary-100: 213 100% 40%;
+  --hand-primary-200: 213 100% 48%;
+  --hand-primary-300: 213 100% 53%;
+  --hand-primary-400: 213 100% 60%;
+  --hand-primary-500: 213 100% 68%;
+  --hand-primary-600: 213 100% 78%;
+  --hand-primary-700: 213 100% 87%;
+  --hand-primary-800: 213 100% 93%;
+  --hand-primary-900: 213 100% 97%;
+
+  /* Secondary Colors - Cool Blue (Compassion, Action, Hope) */
+  --hand-secondary-50: 213 100% 33%;
+  --hand-secondary-100: 213 100% 40%;
+  --hand-secondary-200: 213 100% 48%;
+  --hand-secondary-300: 213 100% 53%;
+  --hand-secondary-400: 213 100% 60%;
+  --hand-secondary-500: 213 100% 68%;
+  --hand-secondary-600: 213 100% 78%;
+  --hand-secondary-700: 213 100% 87%;
+  --hand-secondary-800: 213 100% 93%;
+  --hand-secondary-900: 213 100% 97%;
+
+  /* Success Colors - Green (Growth, Impact, Sustainability) */
+  --hand-success-50: 138 76% 21%;
+  --hand-success-100: 138 76% 25%;
+  --hand-success-200: 138 76% 29%;
+  --hand-success-300: 138 76% 36%;
+  --hand-success-400: 138 76% 45%;
+  --hand-success-500: 138 76% 58%;
+  --hand-success-600: 138 76% 73%;
+  --hand-success-700: 138 76% 85%;
+  --hand-success-800: 138 76% 93%;
+  --hand-success-900: 138 76% 97%;
+
+  /* Warning Colors - Red (Emergency, Urgency, Action) */
+  --hand-warning-50: 0 84% 30%;
+  --hand-warning-100: 0 84% 35%;
+  --hand-warning-200: 0 84% 42%;
+  --hand-warning-300: 0 84% 51%;
+  --hand-warning-400: 0 84% 60%;
+  --hand-warning-500: 0 84% 71%;
+  --hand-warning-600: 0 84% 82%;
+  --hand-warning-700: 0 84% 89%;
+  --hand-warning-800: 0 84% 94%;
+  --hand-warning-900: 0 84% 97%;
+
+  /* Neutral Colors - Professional Grays (Cool Text Colors) */
+  --hand-neutral-50: 220 13% 11%;
+  --hand-neutral-100: 220 13% 17%;
+  --hand-neutral-200: 220 13% 27%;
+  --hand-neutral-300: 220 13% 34%;
+  --hand-neutral-400: 220 13% 46%;
+  --hand-neutral-500: 220 13% 65%;
+  --hand-neutral-600: 220 13% 84%;
+  --hand-neutral-700: 220 13% 91%;
+  --hand-neutral-800: 220 13% 96%;
+  --hand-neutral-900: 220 13% 98%;
+
+  /* Custom Text Color */
+  --hand-text-primary: 15 25% 39%;
+
+  /* Legacy Theme Support */
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Light theme (default) */
+html, body {
+  background: hsl(var(--hand-neutral-50));
+  color: hsl(var(--hand-neutral-900));
+  font-family: 'Lexend', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Dark theme */
+html.dark, 
+body.dark {
+  background: hsl(var(--hand-neutral-900));
+  color: hsl(var(--hand-neutral-50));
+}
+
+/* Ensure main container inherits theme */
+/* #__next,
+main,
+div[class*="min-h-screen"] {
+  background: transparent !important;
+} */
+
+/* Custom scrollbar */
+/* ::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--hand-primary-600));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--hand-primary-500));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--hand-primary-600));
+} */
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scroll-auto {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-auto-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.6s ease-out forwards;
+}
+
+.animate-pulse-slow {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 25s linear infinite;
+}
+
+.animate-scroll-auto {
+  animation: scroll-auto 40s linear infinite;
+}
+
+.pause {
+  animation-play-state: paused;
+}
+
+.animate-scroll-auto-reverse {
+  animation: scroll-auto-reverse 25s linear infinite;
+}
+
+/* Mobile-specific slower animations for better UX */
+@media (max-width: 767px) {
+  .animate-scroll-auto {
+    animation: scroll-auto 25s linear infinite;
+  }
+
+  .animate-scroll-auto-reverse {
+    animation: scroll-auto-reverse 30s linear infinite;
+  }
+}
+
+/* Professional typography utilities */
+.text-heading {
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.text-body {
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.text-caption {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Section height utilities - FIXED to prevent overflow */
+.section-compact {
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  padding: 2rem 0;
+}
+
+.section-standard {
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+/* Professional spacing utilities */
+.section-padding {
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding: 4rem 2rem;
+  }
+}
+
+/* Scrollbar utilities */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* @layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+} */
+img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
