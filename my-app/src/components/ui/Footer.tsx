@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="md:col-span-2 lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center">
-                <Image src="/logo.png" alt="HAND" width={64} height={64} className="w-full h-full object-contain" />
+                <Image src="/logo hand.png" alt="HAND" width={64} height={64} className="w-full h-full object-contain" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-white">HAND</h3>

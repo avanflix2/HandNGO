@@ -136,7 +136,7 @@ export default function AboutSection() {
           <div className="relative z-20">
             <div className="relative w-80 h-80 bg-[#FFFFFA] rounded-lg shadow-2xl overflow-hidden border-2 border-gray-200 flex items-center justify-center">
               <Image
-                src="/logo-bg.png"
+                src="/logo_bg.png"
                 alt="HAND Logo"
                 fill
                 className="object-cover"

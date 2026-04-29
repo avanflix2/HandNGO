@@ -47,7 +47,7 @@ export default function AboutUs() {
                 {/* <div className="absolute inset-0 bg-blue-200 rounded-3xl blur-3xl opacity-30 animate-pulse"></div> */}
                 <div className="relative w-full h-full bg-black rounded-3xl shadow-2xl flex items-center justify-center">
                   <Image
-                    src="/logo.png"
+                    src="/logo hand.png"
                     alt="HAND Logo"
                     width={400}
                     height={400}

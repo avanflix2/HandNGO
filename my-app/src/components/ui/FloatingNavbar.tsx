@@ -40,7 +40,7 @@ export default function FloatingNavbar() {
               <Link href="/">
                 <div className="w-28 h-28 bg-[#FFFFFA] overflow-hidden rounded-md border-1 border-gray-350">
                   <Image
-                    src="/logo-bg.png"
+                    src="/logo_bg.png"
                     alt="HAND Logo"
                     width={80}
                     height={80}
