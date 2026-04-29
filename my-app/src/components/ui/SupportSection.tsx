@@ -17,7 +17,7 @@ export default function SupportSection() {
       title: 'EDUCATION',
       subtitle: 'Enable Learning Opportunities',
       description: 'Break poverty cycles through inclusive learning environments, digital literacy, and scholarship support for rural children.',
-      image: '/education/4.png',
+      image: '/education/4.jpeg',
       color: 'blue'
     },
     {
@@ -49,7 +49,7 @@ export default function SupportSection() {
       title: 'SKILL DEVELOPMENT',
       subtitle: 'Build Future Skills',
       description: 'Equip youth with industry-relevant technical skills in coding, mechanics, and digital media for a better future.',
-      image: '/skill-development/1.jpg',
+      image: '/skill-development/bg2.jpg',
       color: 'blue'
     }
   ]
