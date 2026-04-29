@@ -38,7 +38,7 @@ export default function FloatingNavbar() {
             {/* Logo Section */}
             <div className="flex-shrink-0 flex items-center">
               <Link href="/">
-                <div className="w-28 h-28 bg-[#FFFFFA] overflow-hidden rounded-md border-1 border-gray-350">
+                <div className="w-28 h-28 overflow-hidden rounded-md">
                   <Image
                     src="/logo_bg.png"
                     alt="HAND Logo"
