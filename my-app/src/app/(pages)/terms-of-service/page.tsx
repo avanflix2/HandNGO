@@ -189,7 +189,7 @@ export default function TermsOfService() {
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>If you have any questions about these Terms of Service, please contact us:</p>
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <p><strong>Email:</strong> contact@hand.org.in</p>
+                  <p><strong>Email:</strong> contact@handngo.org</p>
                   <p><strong>Phone:</strong> +91 70367 77677</p>
                   <p><strong>Address:</strong> Villa No : 178, Chitrapuri Row House Rd, Chitrapuri Colony, Hyderabad, Telangana 500104</p>
                 </div>
