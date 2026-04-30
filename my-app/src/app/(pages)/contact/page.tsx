@@ -63,7 +63,7 @@ export default function Contact() {
                         rel="noopener noreferrer"
                         className="text-blue-600 hover:text-blue-700 transition-colors"
                       >
-                        contact@handngo.org
+                        contact@hand.ngo.org
                       </a>
                     </p>
                   </div>
